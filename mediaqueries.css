@@ -1,11 +1,12 @@
+/* PC */
 @media screen and (max-width: 1400px) {
     #profile {
         height: 83vh;
         margin-bottom: 6rem;
     }
-    .about-containers {
+    /* .about-containers {
         flex-wrap: wrap;
-    }
+    } */
 }
 
 @media screen and (max-width: 1200px) {
@@ -16,7 +17,7 @@
         display: flex;
     }
     #experience,
-    .experience-details-container {
+    .experience-details-containers {
         margin-top: 2rem;
     }
     #profile,
@@ -39,12 +40,18 @@
         height: 275px;
         margin: 0 auto 2rem;
     }
+    .experience-about-containers,
     .about-containers {
+        flex-wrap: wrap;
         margin-top: 0;
+        justify-content: center;
     }
 }
 
 @media screen and (max-width: 600px) {
+    html {
+        font-size: 80.5%;
+    }
     #contact,
     footer {
         height: 40vh;

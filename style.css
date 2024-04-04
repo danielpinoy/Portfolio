@@ -26,6 +26,7 @@ html {
 
 p {
     color: rgb(85, 85, 85);
+    font-size: 1.2rem;
 }
 
 /* TRANSITION */
@@ -273,16 +274,35 @@ section {
     position: relative;
 }
 .about-containers {
+    display: flex;
     gap: 2rem;
     margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 1rem;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(163, 163, 163) rgb(250, 250, 250);
+}
+
+.about-containers::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.about-containers::-webkit-scrollbar-track {
+    background: rgb(250, 250, 250);
+}
+
+.about-containers::-webkit-scrollbar-thumb {
+    background-color: rgb(163, 163, 163);
+    border-radius: 4px;
 }
 .about-details-container {
     justify-content: center;
     flex-direction: column;
 }
 
-.about-containers,
 .about-details-container {
     display: flex;
 }
@@ -297,15 +317,16 @@ section {
 }
 
 .details-container {
+    flex: 0 0 auto;
+    width: 300px;
     padding: 1.5rem;
-    flex: 1;
     background: white;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
+    scroll-snap-align: start;
 }
-
 .section-container {
     gap: 4rem;
     height: 80%;
@@ -327,6 +348,15 @@ section {
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
+}
+
+.experience-about-containers {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    overflow-x: auto;
+    justify-content: center;
 }
 
 .experience-details-container {
@@ -359,6 +389,7 @@ article .icon {
 
 #projects {
     position: relative;
+    margin-top: 2rem;
 }
 
 .color-container {
