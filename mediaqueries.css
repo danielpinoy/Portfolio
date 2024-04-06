@@ -9,6 +9,7 @@
     } */
 }
 
+/* Medium */
 @media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
@@ -48,6 +49,7 @@
     }
 }
 
+/* PHONE */
 @media screen and (max-width: 600px) {
     html {
         font-size: 80.5%;
