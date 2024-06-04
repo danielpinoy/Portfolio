@@ -403,6 +403,7 @@ article .icon {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     justify-items: center;
+    margin-bottom: 5rem;
 }
 
 .details-container-noImg {
